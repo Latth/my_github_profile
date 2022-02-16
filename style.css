@@ -367,3 +367,13 @@ a {
 }
 
 
+.links-details::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+    
+}
+.links-details::-webkit-scrollbar-thumb {
+    background: #EBB853;
+    border-radius: 2rem;
+    overflow: hidden;
+}
