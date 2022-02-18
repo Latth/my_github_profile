@@ -24,7 +24,7 @@ function getRepos() {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let result = JSON.parse(xhttp.responseText);
-            
+            document.getElementById('repo-title').innerHTML = "REPOS"+`(${result.length})`;
             function getReposActive() {
                 let body = document.querySelector('.links-details');
                 let i = 0;
